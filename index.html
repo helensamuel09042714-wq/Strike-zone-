@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strike Zone: Anime Action</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+  <h1>Welcome to Strike Zone!</h1>
+
+  <div class="characters">
+    <div class="char">
+      <div class="avatar girl"></div>
+      <p><strong>Aquila</strong><br>"Stay focused. I’ll guide you."</p>
+    </div>
+
+    <div class="char">
+      <div class="avatar boy"></div>
+      <p><strong>Justice</strong><br>"Ready? Let’s begin."</p>
+    </div>
+  </div>
+
+  <button id="startBtn">Start Mission</button>
+</div>
+
+<!-- GAME UI -->
+<div id="hud" class="hidden">
+  <span>Score: <span id="score">0</span></span>
+  <span>Time: <span id="time">30</span>s</span>
+</div>
+
+<div id="game" class="hidden">
+  <div class="enemy" onclick="hitEnemy()"></div>
+  <div class="enemy" onclick="hitEnemy()"></div>
+</div>
+
+<div id="weapon" class="hidden">
+  <div class="gun"></div>
+</div>
+
+<div id="gameOver" class="hidden">
+  <h2>Mission Ended</h2>
+  <p>Final Score: <span id="finalScore"></span></p>
+  <button onclick="restartGame()">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
