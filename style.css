@@ -1,0 +1,110 @@
+/* Basic page style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: white;
+  text-align: center;
+}
+
+/* INTRO SCREEN */
+#intro {
+  height: 100vh;
+  background: linear-gradient(#1b1b1b, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.char {
+  width: 160px;
+}
+
+.avatar {
+  height: 220px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.girl {
+  background: #444; /* Placeholder for Aquila */
+}
+
+.boy {
+  background: #333; /* Placeholder for Justice */
+}
+
+/* HUD (score & timer) */
+#hud {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+/* GAME AREA */
+#game {
+  height: 70vh;
+  background: linear-gradient(#2a2a2a, #000);
+  position: relative;
+}
+
+.enemy {
+  width: 60px;
+  height: 120px;
+  background: crimson;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+/* WEAPON VIEW */
+#weapon {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gun {
+  width: 200px;
+  height: 110px;
+  background: #111;
+  border-radius: 25px;
+  border: 3px solid #555;
+}
+
+/* GAME OVER SCREEN */
+#gameOver {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
