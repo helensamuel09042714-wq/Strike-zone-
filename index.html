@@ -23,24 +23,27 @@
     </div>
   </div>
 
-  <button id="startBtn">Start Mission</button>
+  <button id="startBtn">Play Game</button>
 </div>
 
-<!-- GAME UI -->
+<!-- HUD -->
 <div id="hud" class="hidden">
   <span>Score: <span id="score">0</span></span>
   <span>Time: <span id="time">30</span>s</span>
 </div>
 
+<!-- GAME AREA -->
 <div id="game" class="hidden">
   <div class="enemy" onclick="hitEnemy()"></div>
   <div class="enemy" onclick="hitEnemy()"></div>
 </div>
 
+<!-- WEAPON -->
 <div id="weapon" class="hidden">
   <div class="gun"></div>
 </div>
 
+<!-- GAME OVER -->
 <div id="gameOver" class="hidden">
   <h2>Mission Ended</h2>
   <p>Final Score: <span id="finalScore"></span></p>
